@@ -1,13 +1,38 @@
 # React Draggable Notes Board
 
-## This project is a simple React application that allows users to create draggable notes on a board. Each note can be added, dragged to any position on the board, and pinned/unpinned. The notes are stored locally in the browser's localStorage. Users can also edit and delete notes.
+ This project is a simple React application that allows users to create draggable notes on a board. Each note can be added, dragged to any position on the board, and pinned/unpinned. The notes are stored locally in the browser's localStorage. Users can also edit and delete notes.
 
 ## Features
-Add new notes by clicking on the "+" button.
-Notes are draggable to any position on the board.
-Pin/unpin notes to keep them in a fixed position.
-Edit and delete notes.
-Notes are stored in the browser's localStorage.
+
+- **Add New Notes:** Click on the "+" button to add a new note.
+
+- **Draggable Notes:** Notes can be dragged to any position on the board.
+
+- **Pin/Unpin:** Pin/unpin notes to keep them in a fixed position.
+
+- **Edit and Delete:** Edit and delete notes easily.
+
+- **LocalStorage Storage:** Notes are stored in the browser's `localStorage`.
+
+## Usage
+
+- **Add New Note:**
+  Click on the "+" button to add a new note.
+
+- **Draggable Notes:**
+  Drag notes to reposition them on the board.
+
+- **Pin/Unpin Notes:**
+  - Click on the "Pin" button to fix a note's position.
+  - Click on the "Unpin" button to unfix a note.
+
+- **Edit Note:**
+  Click on the "Edit" button to edit a note's content.
+
+- **Delete Note:**
+  Click on the "X" button to delete a note.
+
+
 
 # How to setup application locally 
 
@@ -20,6 +45,7 @@ Notes are stored in the browser's localStorage.
 
  ## UI
 
-![image](https://github.com/soniadiwedi/flexiple/assets/112754761/7407d1b5-5ad8-4ede-9d7e-571c6b109620)
+![image](https://github.com/soniadiwedi/flexiple/assets/112754761/505d22b8-e7a2-4d0a-9948-cba0fb9d1371)
+
 
 
