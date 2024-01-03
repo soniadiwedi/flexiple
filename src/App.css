@@ -46,3 +46,8 @@
   background-color: rgb(141, 141, 77);
   
 }
+
+.inputbox{
+  padding: 25px;
+  outline: none;
+}

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Note from "./Note";
+import Input from "./Input";
 
 const Board = () => {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes")) || []
   );
   const [newNoteText, setNewNoteText] = useState("");
-  const [showForm, setShowForm] = useState(false);
   const [editId, seteditId] = useState(null);
 
   useEffect(() => {
@@ -43,7 +43,6 @@ const Board = () => {
   const handleDragStart = (e, id) => {
     const noteIndex = notes.findIndex((el) => el.id === id);
     const note = notes[noteIndex];
-
     e.dataTransfer.setData("text/plain", note.id);
     e.dataTransfer.setDragImage(e.target, 0, 0);
   };
@@ -113,41 +112,7 @@ const Board = () => {
 
   return (
     <div>
-      <button
-        style={{
-          cursor: showForm ? "not-allowed" : "pointer",
-          opacity: showForm ? 0.5 : 1,
-          padding: "15px",
-          position: "absolute",
-          right: 0,
-          top: 0,
-          color: "white",
-          backgroundColor: "red",
-          fontSize: "30px",
-          border: "none",
-        }}
-        onClick={() => setShowForm(!showForm)}
-      >
-        +
-      </button>
-      {showForm && (
-        <form
-          className="addForm"
-          onSubmit={(e) => {
-            e.preventDefault();
-            saveNote();
-          }}
-        >
-          <textarea
-            value={newNoteText}
-            onChange={(e) => setNewNoteText(e.target.value)}
-            placeholder="Type your note here..."
-          />
-          <button className="savebtn" type="submit">
-            Save
-          </button>
-        </form>
-      )}
+   <Input saveNote={saveNote} newNoteText={newNoteText} setNewNoteText={setNewNoteText}/>
 
       <div
         className="maindiv"
@@ -161,6 +126,8 @@ const Board = () => {
             draggable={true}
             onDragStart={(e) => handleDragStart(e, el.id)}
             style={{
+              width:"200px",
+              wordWrap:"break-word",
               border: "black",
               backgroundColor: "yellow",
               padding: "2rem",
