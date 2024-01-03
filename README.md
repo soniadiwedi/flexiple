@@ -47,5 +47,11 @@
 
 ![image](https://github.com/soniadiwedi/flexiple/assets/112754761/505d22b8-e7a2-4d0a-9948-cba0fb9d1371)
 
+![image](https://github.com/soniadiwedi/flexiple/assets/112754761/6ba512f3-eba5-4a4f-9c77-42a1b912d097)
+
+![image](https://github.com/soniadiwedi/flexiple/assets/112754761/623fe73a-3c1e-4257-9d80-53563d74ce9f)
+
+
+
 
 
