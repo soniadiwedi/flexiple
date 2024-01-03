@@ -15,9 +15,10 @@ const Note = ({ id, text, isPin, setPin, deleteNote, isEditing, editNote, cancel
     <div>
       {isEditing ? (
         <>
-          <textarea value={editedText} onChange={handleTextChange} />
-          <button onClick={handleUpdateClick}>Update</button>
-          <button onClick={cancelEdit}>Cancel</button>
+         <input className="edit-input" value={editedText} onChange={handleTextChange} />
+<button className="update-btn" onClick={handleUpdateClick}>Update</button>
+<button className="cancel-btn" onClick={cancelEdit}>Cancel</button>
+ 
         </>
       ) : (
         <>

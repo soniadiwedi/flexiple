@@ -29,16 +29,22 @@
   position: absolute;
   bottom: 2px;
   right: 50px;
+  cursor: pointer;
 }
 
 .editbtn{
   border: none;
   padding: 5px;
   position: absolute;
-  background-color: green;
+  background-color: #3498db;
   color: white;
   bottom: 2px;
   left: 50px;
+  cursor: pointer;
+}
+
+.editbtn:hover{
+  background-color: #2980b9;
 }
 .maindiv{
   width: 100%;
@@ -50,4 +56,33 @@
 .inputbox{
   padding: 25px;
   outline: none;
+}
+
+.edit-input{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.update-btn{
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.update-btn:hover{
+  background-color: #2980b9;
+}
+.cancel-btn{
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #e74c3c;
+}
+.cancel-btn:hover{
+  background-color: #c0392b;
 }
